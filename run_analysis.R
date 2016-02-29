@@ -13,7 +13,7 @@ library(dplyr)
 # Create a directory called week4_assignment if it doesn't already exist
 
 
-if( !grep("week4_assignment$", getwd() )) {
+if( length(grep("week4_assignment$", getwd() )) == 0 ) {
   dir.create("./week4_assignment")
   setwd("./week4_assignment")
 }
